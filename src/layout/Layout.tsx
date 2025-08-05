@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 const Layout: React.FC = () => {
   return (
@@ -11,12 +11,20 @@ const Layout: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-teal-600">채대리</h1>
+                <Link to="/" className="text-2xl font-bold text-teal-600 hover:text-teal-700 transition-colors">
+                  채대리
+                </Link>
               </div>
             </div>
             
             {/* Navigation */}
             <nav className="hidden md:flex space-x-8">
+              <Link to="/" className="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">
+                홈
+              </Link>
+              <Link to="/components" className="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">
+                컴포넌트
+              </Link>
               <a href="#" className="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">
                 서비스
               </a>

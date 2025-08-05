@@ -28,7 +28,21 @@
         vite + react + ts + tailwind + eslint + routes + fsd아키텍처처 프로젝트 구성
 
         ```bash
-            @toss_design_metadata.json 
-            우리가 사용할 테마를 json으로 파일을 첨부할게,
-            이걸 기반으로 /components 페이지를 만들고 해당 페이지에 내가 확인 할 수 있는 데모 컴포넌트들을 만들어줘. 이 컴포넌트들은 프로젝트 전반적으로 반복적으로 사용 할 계획이고, 일반화와 중앙화에 신경써줘
+            @toss_design_metadata.json 를 기반으로 @https://toss.im/career/jobs 레이아웃으로 @Layout.tsx @Home.tsx 홈레이아웃을 구성해주세요.@index.css 도 청록색 청룡 디자인에 어울리도록 수정해주세요.
+        ```
+
+        이렇게 하면 기본적인 레이아웃 + 색감을 눈에 볼 수 있습니다.
+
+        ```bash
+            @App.tsx 에 /components 페이지를 추가하고@pages/ 에 페이지를 만들고 해당 페이지에서는 @components/ 의 모든 컴포넌트를 확인할 수 있습니다.
+
+            @components/ 에 종류별로 폴더를 구성하고 하위에 컴포넌트 파일을 작성합니다.
+
+            일반화와 중앙화에 신경써주세요.
+        ```
+
+        이렇게 하면 /components 경로에서 일부 컴포넌트가 생성됩니다.
+
+        ```bash
+            공통 컴포넌트로 carousel 디자인도 만들어주고, Card컴포넌트는 이미지가 들어간것도 추가해주세요.
         ```
