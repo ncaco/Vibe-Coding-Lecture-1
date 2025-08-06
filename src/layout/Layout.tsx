@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Layout: React.FC = () => {
   return (
@@ -11,8 +12,8 @@ const Layout: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Link to="/" className="text-2xl font-bold text-teal-600 hover:text-teal-700 transition-colors">
-                  채대리
+                <Link to="/" className="flex items-center">
+                  <img src={logo} alt="채대리 로고" className="h-8 w-auto" />
                 </Link>
               </div>
             </div>
